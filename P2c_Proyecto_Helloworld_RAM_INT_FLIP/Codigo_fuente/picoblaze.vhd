@@ -463,7 +463,7 @@ begin
             carry_out => shift_and_rotate_carry,
             clk => clk);
 
- --added new instruction
+-- added new instruction
   flip_group: flip
   port map (operand => sX_register,
             Y => flip_result,

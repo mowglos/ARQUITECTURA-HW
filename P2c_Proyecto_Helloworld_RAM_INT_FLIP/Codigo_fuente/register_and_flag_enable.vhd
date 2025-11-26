@@ -48,8 +48,8 @@ begin
    reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input or i_flip) 
   								and (not active_interrupt);
 
---  reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input) 
---  								and (not active_interrupt);
+  --reg_instruction_decode <= (i_logical or i_arithmetic or i_shift_rotate or i_input) 
+  	--							and (not active_interrupt);
 
   reg_pipeline_bit:
   process (clk)
